@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Uconn-banner-wp : Inserts the UConn header branding at the top of your Wordpress site." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Uconn-banner-wp</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/uconn/uconn-banner-wp">View on GitHub</a>
+
+          <h1 id="project_title">Uconn-banner-wp</h1>
+          <h2 id="project_tagline">Inserts the UConn header branding at the top of your Wordpress site.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/uconn/uconn-banner-wp/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/uconn/uconn-banner-wp/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="uconn-banner-for-wordpress" class="anchor" href="#uconn-banner-for-wordpress"><span class="octicon octicon-link"></span></a>UConn Banner for Wordpress</h1>
+
+<p>Inserts the UConn header branding at the top of your Wordpress site.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Github Updates.</li>
+<li>Stylesheets referenced through the UConn CDN.</li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Download the latest build of the <a href="#">Wordpress UConn Banner Plugin</a> from <a href="#">UConn's brand website</a>, or follow the instructions below to install the plugin from GitHub.</p>
+
+<ol>
+<li>In an empty folder, run the command <code>git clone --recursive git://github.com/uconn/uconn-banner-wp.git</code>
+</li>
+<li>Copy the <code>uconn-banner-wp</code> directory into your <code>wp-content/plugins</code> directory</li>
+<li>In Wordpress, navigate to the <em>Plugins</em> dashboard page</li>
+<li>Locate the plugin named <em>UConn Banner</em> and click on <em>Activate</em>
+</li>
+<li>Place the action <code>&lt;?php do_action('uconn_banner'); ?&gt;</code> into your theme's <code>header.php</code> file after the opening <code>&lt;body&gt;</code> tag. This file can be found by navigating to <em>Appearance -&gt; Editor</em> and looking for the <code>header.php</code> file in the right column.</li>
+</ol><h2>
+<a name="upgrading" class="anchor" href="#upgrading"><span class="octicon octicon-link"></span></a>Upgrading</h2>
+
+<p>There are two ways of upgrading the plugin. You may follow the installation instructions and upload <code>uconn-banner-wp</code>, replacing the old version in your <code>wp-content/plugins</code> directory or if you still have the original cloned repository in a folder, you can run the command <code>git pull --recursive</code> to pull in the most recent changes from GitHub.</p>
+
+<h2>
+<a name="important-notes" class="anchor" href="#important-notes"><span class="octicon octicon-link"></span></a>Important Notes</h2>
+
+<p>This plugin requires submodules:</p>
+
+<ol>
+<li><a href="https://github.com/harrydeluxe/php-liquid.git">PHP-Liquid</a></li>
+<li><a href="https://github.com/uconn/banner.git">UConn-Banner</a></li>
+</ol><p>Use the command <code>git clone --recursive git://github.com/uconn/uconn-banner-wp.git</code> to clone the repo and its submodules.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The UConn Banner Plugin is licensed under the GPL v2 or later.</p>
+
+<blockquote>
+<p>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 2, as
+published by the Free Software Foundation.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</p>
+</blockquote>
+
+<h3>
+<a name="licensing" class="anchor" href="#licensing"><span class="octicon octicon-link"></span></a>Licensing</h3>
+
+<p>The UConn Banner Plugin is licensed under the GPL v2 or later; however, if you opt to use third-party code that is not compatible with v2, then you may need to switch to using code that is GPL v3 compatible.</p>
+
+<p>For reference, <a href="http://make.wordpress.org/themes/2013/03/04/licensing-note-apache-and-gpl/">here's a discussion</a> that covers the Apache 2.0 License used by <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Uconn-banner-wp maintained by <a href="https://github.com/uconn">uconn</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
