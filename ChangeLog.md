@@ -1,3 +1,6 @@
+## 1.2.0 (upcoming)
+- Added support for alternate banner style
+
 ## 1.0 (November 2013)
 
 * Official Release

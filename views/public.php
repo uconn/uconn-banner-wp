@@ -28,7 +28,7 @@ if(!class_exists('Liquid')) {
     $banner->department = $options['department_title'];
     $banner->url = get_bloginfo('department_url');
     $banner->header = $options['display_page_header'];
-
+    $banner->alternative = $options['alternative'];
 
     /**
      * Search form
