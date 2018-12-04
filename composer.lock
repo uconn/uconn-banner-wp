@@ -113,12 +113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/uconn/banner.git",
-                "reference": "c81868b2bd607b0b7adc90aff001a18c3e7c7eb1"
+                "reference": "e2626a23fff3076981616c28fc33f96793a9ea04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uconn/banner/zipball/c81868b2bd607b0b7adc90aff001a18c3e7c7eb1",
-                "reference": "c81868b2bd607b0b7adc90aff001a18c3e7c7eb1",
+                "url": "https://api.github.com/repos/uconn/banner/zipball/e2626a23fff3076981616c28fc33f96793a9ea04",
+                "reference": "e2626a23fff3076981616c28fc33f96793a9ea04",
                 "shasum": ""
             },
             "require": {
@@ -147,7 +147,7 @@
                 }
             ],
             "description": "The UConn Banner - Branding for the top of your web pages.",
-            "time": "2018-12-03T20:58:40+00:00"
+            "time": "2018-12-04T15:44:53+00:00"
         }
     ],
     "packages-dev": [
