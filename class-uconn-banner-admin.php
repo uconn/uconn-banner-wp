@@ -90,6 +90,7 @@ class UConn_Banner_Admin {
 	 */
 	public function uconnbanner_options_validate($input) {
 
+		$input['alternative'] = ($input['alternative'] == 1) ? true : false;
 		$input['display_page_header'] = ($input['display_page_header'] == 1) ? true : false;
 		$input['department_title'] = ($input['department_title'] == "") ? "" : $input['department_title'];
 		$input['department_url'] = ($input['department_url'] == "") ? "" : $input['department_url'];

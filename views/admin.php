@@ -24,9 +24,26 @@
 		<form method="post" id="uconn-banner-settings" action="options.php"> 
 		
 			<?php settings_fields( 'uconnbanner-group' ); ?>
-			<?php $options = get_option('uconnbanner_options'); ?>
+			<?php 
+				$options = get_option('uconnbanner_options');
+				if (!isset($options['alternative'])) {
+					$options['alternative'] = false;
+				} 
+			?>
 
 			<table class="form-table">
+
+				<tr valign="top">
+					<th scope="row">
+						<label for="style_selector">Use Alternate Style?</label>
+					</th>
+					<td>
+						<select name="uconnbanner_options[alternative]" id="style_selector">
+							<option value="1" <?php selected(true, $options['alternative']); ?>>Yes</option>
+							<option value="0" <?php selected(false, $options['alternative']); ?>>No</option>
+						</select>
+					</td>
+				</tr>
 
 				<tr valign="top">
 					<th scope="row">

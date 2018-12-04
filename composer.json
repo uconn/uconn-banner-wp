@@ -3,6 +3,7 @@
     "description": "Inserts the UConn header branding at the top of your Wordpress site. http://brand.uconn.edu",
     "type": "wordpress-plugin",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Brian Daley",
@@ -24,25 +25,20 @@
         },
         {
             "type": "composer",
-            "url": "http://apps.packages.staging.ucdev.net/"
+            "url": "https://packages.ucdev.net/"
         }
 
     ],
     "require": {
-        "uconn/banner": "^1.0"
+        "uconn/banner": "dev-develop"
     },
     "require-dev": {
         "composer/installers": "~1.0",
-        "johnpbloch/wordpress":"4.7.2",
-        "wpackagist-plugin/wordpress-seo":"*",
-        "wpackagist-plugin/advanced-custom-fields":"*",
-        "ucomm/uconn-today-plugin": "~1.0",
         "wpackagist-theme/twentyseventeen": "1",
         "ucomm/napier": "*",
         "ucomm/bb-theme": "*",
-        "ucomm/uc-foi-database": "*",
-        "ucomm/uc-dailydigest-widget": "*",
-        "ucomm/uconn-health-clinical": "*"
+        "ucomm/uconn-health-clinical": "*",
+        "johnpbloch/wordpress": "@stable"
     },
     "extra": {
         "installer-paths": {
@@ -52,7 +48,7 @@
         "wordpress-install-dir":"./www/wordpress"
     },
     "config":{
-        "secure-http": false
+        "secure-http": true
     },
     "scripts":{
         "run-builds": "find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && pwd\" \\;",
